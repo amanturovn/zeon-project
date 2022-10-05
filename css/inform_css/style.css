@@ -1,0 +1,23 @@
+/* .inform__empty-div {
+  width: 268px;
+  height: 480px;
+  background-color: #fafafa;
+}
+.inform__empty-obj {
+  width: 368px;
+  height: 480px;
+  background-color: #fafafa;
+} */
+.inform__block_started {
+  display: flex;
+  background-image: url(../inform_css/inform_img/nature.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 480px;
+}
+
+.inform__empty-div {
+  background-image: url(../inform_css/inform_img/emptydiv1.png);
+  width: 268px;
+  height: 480px;
+}

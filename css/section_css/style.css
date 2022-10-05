@@ -1,0 +1,37 @@
+.sectiom__inform_block {
+  width: 368px;
+  height: 130px;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section__inform {
+  position: relative;
+  margin-top: 33px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* position: relative; */
+}
+.section__title {
+  width: 331px;
+  padding: 16px 0 0 16px;
+  position: absolute;
+}
+
+.section__inform a {
+  /* position: absolute; */
+  text-decoration: none;
+  color: #181818;
+  font-size: 14px;
+}
+
+.block__border {
+  width: 5px;
+  height: 129px;
+  background-color: #0f2a59;
+}
+.block__border:hover {
+  background-color: #ebebeb;
+}

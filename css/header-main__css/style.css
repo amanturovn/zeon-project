@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  color: #181818;
+  left: 0;
+  top: 0;
+  font-weight: 400;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1168px;
+}
+
+/* header ================= */
+
+.header__inner {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f2a59;
+  width: 200px;
+}
+
+.header__nav {
+  width: 881px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__ul {
+  list-style: none;
+  width: 325px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__link a {
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #181818;
+}
+.nav__link img {
+  margin-left: 4px;
+}
+
+.nav__lang {
+  width: 122px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__lang p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* main ============ */
+/* .main {
+  width: 100%;
+  height: 568px;
+} */
+.main__banner {
+  background-image: url(./main_img/fotka.png);
+  /* width: 100%; */
+  /* max-width: 1366px; */
+  /* height: auto; */
+  background-position: center center;
+  background-color: #464646;
+  /* margin: 0 auto; */
+  /* background-size: cover; */
+}
+/* .main__banner {
+  height: 567px;
+} */
+
+.main__inner {
+  /* height: 567px; */
+  /* margin: 227px 0 128px; */
+  margin: 0 32px;
+  padding: 227px 0 128px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.main__description {
+  width: 343px;
+  height: 176px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.main__arrow_desc {
+  width: 478px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__description_title {
+  font-size: 28px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.main__description_sub-title {
+  color: #ffffff;
+  margin: 20px 0 53px;
+}
+.main__description_btn {
+  width: 198px;
+  height: 40px;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main__description_btn a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.main__cyrcles {
+  width: 136px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 28px;
+}
+.main__cyrles_cyrle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #b8b8b8;
+  background-color: #ffffff;
+}
+
+.main__cyrles_cyrle:hover {
+  border: 2px solid #ffffff;
+  background-color: #0f2a59;
+}
