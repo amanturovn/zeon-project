@@ -14,6 +14,22 @@ body {
   margin: 0 auto;
   max-width: 1168px;
 }
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .container {
+    max-width: 900px;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    max-width: 760px;
+  }
+}
 
 /* header ================= */
 
@@ -35,7 +51,19 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
+@media (max-width: 570px) {
+  .header__nav {
+    display: none;
+  }
+}
+.burger__menu {
+  display: none;
+}
+@media (max-width: 570px) {
+  .burger__menu {
+    display: block;
+  }
+}
 .nav__ul {
   list-style: none;
   width: 325px;
@@ -49,6 +77,12 @@ body {
   font-weight: 400;
   text-decoration: none;
   color: #181818;
+}
+
+.nav__link :hover {
+  color: #000000;
+  opacity: 0.7;
+  transition: 0.5s;
 }
 .nav__link img {
   margin-left: 4px;
@@ -66,28 +100,22 @@ body {
   font-weight: 400;
 }
 
-/* main ============ */
-/* .main {
-  width: 100%;
-  height: 568px;
-} */
 .main__banner {
   background-image: url(./main_img/fotka.png);
-  /* width: 100%; */
-  /* max-width: 1366px; */
-  /* height: auto; */
   background-position: center center;
   background-color: #464646;
-  /* margin: 0 auto; */
-  /* background-size: cover; */
 }
-/* .main__banner {
-  height: 567px;
-} */
+@media (max-width: 700px) {
+  .main__banner {
+    max-width: 750px;
+    background-position: 75% 0;
+  }
+  .main__arrow {
+    display: none;
+  }
+}
 
 .main__inner {
-  /* height: 567px; */
-  /* margin: 227px 0 128px; */
   margin: 0 32px;
   padding: 227px 0 128px;
   display: flex;
@@ -97,8 +125,8 @@ body {
 }
 
 .main__description {
-  width: 343px;
-  height: 176px;
+  max-width: 343px;
+  max-height: 176px;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -109,6 +137,18 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 700px) {
+  .main__description {
+    background-color: rgba(248, 199, 199, 0.154);
+  }
+  .main__inner {
+    /* padding: 277px 350px 0 0; */
+    /* padding: 0; */
+  }
+  .main__arrow_desc {
+    width: 100%;
+  }
 }
 
 .main__description_title {
@@ -128,10 +168,20 @@ body {
   align-items: center;
   justify-content: center;
 }
+.main__description_btn:hover {
+  background-color: rgb(67, 64, 64);
+  transition: 0.7s;
+  /* opacity: 0.5; */
+}
 .main__description_btn a {
   color: #ffffff;
   text-decoration: none;
   font-weight: 500;
+}
+
+.main__arrow:hover {
+  background-color: rgb(67, 64, 64);
+  transition: 0.7s;
 }
 
 .main__cyrcles {

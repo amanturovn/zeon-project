@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/section_css/style.css" />
     <link rel="stylesheet" href="css/news_css/style.css" />
     <link rel="stylesheet" href="css/inform_css/style.css" />
+    <link rel="stylesheet" href="css/footer_css/style.css" />
+    <link rel="stylesheet" href="css/new-page_css/style.css" />
     <title>zeon project</title>
   </head>
   <body>
@@ -22,14 +24,15 @@
           <nav class="header__nav">
             <ul class="nav__ul">
               <li class="nav__link">
-                <a href="#">О нас</a><img src="./img/arrow.svg" alt="arrow" />
-              </li>
-              <li class="nav__link">
-                <a href="#">Наша миссия</a
+                <a href="#aboutUs">О нас</a
                 ><img src="./img/arrow.svg" alt="arrow" />
               </li>
               <li class="nav__link">
-                <a href="#">Контакты</a
+                <a href="#missia">Наша миссия</a
+                ><img src="./img/arrow.svg" alt="arrow" />
+              </li>
+              <li class="nav__link">
+                <a href="#contacts">Контакты</a
                 ><img src="./img/arrow.svg" alt="arrow" />
               </li>
             </ul>
@@ -39,6 +42,7 @@
               <a href="#"><img src="./img/ru.svg" alt="" /></a>
             </div>
           </nav>
+          <div class="burger__menu">X</div>
         </div>
       </div>
     </header>
@@ -46,18 +50,23 @@
       <div class="main__banner">
         <div class="main__inner">
           <div class="main__arrow_desc">
-            <div><img src="./img/arrowleft.svg" alt="" /></div>
+            <div>
+              <img class="main__arrow" src="./img/arrowleft.svg" alt="" />
+            </div>
             <div class="main__description">
               <div class="main__description_title">Теплосети</div>
               <div class="main__description_sub-title">
                 Тепло в каждый уголок нашей страны
               </div>
+
               <div class="main__description_btn">
                 <a href="#">Подробнее о нас</a>
               </div>
             </div>
           </div>
-          <div><img src="./img/arrowrigth.svg" alt="" /></div>
+          <div>
+            <img class="main__arrow" src="./img/arrowrigth.svg" alt="" />
+          </div>
         </div>
         <div class="main__cyrcles container">
           <div class="main__cyrles_cyrle"></div>
@@ -102,7 +111,7 @@
           </div>
         </div>
       </section>
-      <section class="container">
+      <section style="display: none" class="container">
         <p class="news__title">Последние актуальные новости в мире энергии</p>
         <div class="section__news">
           <div class="section__news__base">
@@ -137,17 +146,254 @@
           </div>
         </div>
       </section>
-      <!-- <div class="inform__block container">
-        <div class="inform__block_started"></div>
-        <div class="inform__empty-div"></div>
-        <div class="inform__block_objective">
-          <div class="inform__empty-obj"></div>
-        </div>
-        <div class="inform__block_aboutUs">
+      <div style="display: none" class="inform__block container">
+        <div class="inform__block_one">
+          <div class="inform__block_started">
+            <div class="inform__block_desc">
+              <div id="aboutUs" class="inform__block_desc-title">
+                Как мы начинали?
+              </div>
+              <div class="inform__block_desc-p">
+                Методологический подход к экологии как к науке позволяет
+                выделить предмет, задачи и методы исследований. Объекты
+                исследования экологии — в основном, системы выше уровня
+                отдельных организмов: популяции, биоценозы, экосистемы, а также
+                вся биосфера. Предмет изучения — организация и функционирование
+                таких систем. Главная задача прикладной экологии —
+              </div>
+              <div class="inform__block_desc-btn">Подробнее о нас</div>
+            </div>
+          </div>
           <div class="inform__empty-div"></div>
         </div>
-        <div class="photo"></div>
-      </div> -->
+        <div class="inform__block_two">
+          <div class="inform__empty-obj"></div>
+          <div class="inform__block_objective">
+            <div class="inform__block_desc inform__block_desc_left">
+              <div id="missia" class="inform__block_desc-title">
+                Наша дальнейшая цель и будущее
+              </div>
+              <div class="inform__block_desc-p">
+                Методологический подход к экологии как к науке позволяет
+                выделить предмет, задачи и методы исследований. Объекты
+                исследования экологии — в основном, системы выше уровня
+                отдельных организмов: популяции, биоценозы, экосистемы, а также
+                вся биосфера. Предмет изучения — организация и функционирование
+                таких систем. Главная задача прикладной экологии —
+              </div>
+              <div class="inform__block_desc-btn">Подробнее о нас</div>
+            </div>
+          </div>
+        </div>
+        <div class="inform__block_tree">
+          <div class="inform__block_aboutUs">
+            <div class="inform__block_desc">
+              <div class="inform__block_desc-title">Кто мы?</div>
+              <div class="inform__block_desc-p">
+                Методологический подход к экологии как к науке позволяет
+                выделить предмет, задачи и методы исследований. Объекты
+                исследования экологии — в основном, системы выше уровня
+                отдельных организмов: популяции, биоценозы, экосистемы, а также
+                вся биосфера. Предмет изучения — организация и функционирование
+                таких систем. Главная задача прикладной экологии —
+              </div>
+              <div class="inform__block_desc-btn">Подробнее о нас</div>
+            </div>
+          </div>
+          <div class="inform__empty-div"></div>
+        </div>
+      </div>
     </main>
+    <footer style="display: none" class="footer">
+      <div class="pre__footer container">
+        <span>Как с нами связаться</span>
+        <span>Социальные сети</span>
+      </div>
+
+      <div class="footer__main">
+        <div class="footer__inform container">
+          <div id="contacts" class="footer__contacts">
+            <h4>Наши контакты</h4>
+            <div class="footer__contacts_phone">
+              <img src="./css/footer_css/phone.svg" alt="phone" />
+              <a href="tel:+996777445566">+996 777 44 55 66</a>
+            </div>
+            <div class="footer__contacts_phone">
+              <img src="./css/footer_css/phone.svg" alt="phone" />
+              <a href="tel:+996777445566">+996 777 44 55 66</a>
+            </div>
+            <div class="footer__contacts_phone">
+              <img src="./css/footer_css/phone.svg" alt="phone" />
+              <a href="tel:+996777445566">+996 777 44 55 66</a>
+            </div>
+            <hr />
+            <div class="footer__contacts_phone">
+              <img src="./css/footer_css/facebook.svg" alt="facebook" />
+              <a href="https://www.facebook.com/">Facebook</a>
+            </div>
+            <div class="footer__contacts_phone">
+              <img src="./css/footer_css/whatsapp.png" alt="facebook" />
+              <a href="https://www.instagram.com">Instagram</a>
+            </div>
+            <div class="footer__contacts_phone">
+              <img src="./css/footer_css/youtube.svg" alt="youtube" />
+              <a href="https://www.youtube.com/">Youtube</a>
+            </div>
+            <hr />
+            <div class="footer__contacts_phone">
+              <img src="./css/footer_css/mapaddress.svg" alt="map" />
+              <a
+                href="https://yandex.ru/maps/10309/bishkek/?ll=74.603710%2C42.876366&z=12"
+                >г.Бишкек, пр.Чуй</a
+              >
+            </div>
+          </div>
+          <div class="footer__map">
+            <img src="./css/footer_css/map.png" alt="map" />
+          </div>
+        </div>
+        <hr style="margin-top: 40px" class="container" />
+      </div>
+    </footer>
+
+    <div class="new__page" style="display: none">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__logo">Лого</div>
+            <nav class="header__nav">
+              <ul class="nav__ul">
+                <li class="nav__link">
+                  <a href="#">О нас</a><img src="./img/arrow.svg" alt="arrow" />
+                </li>
+                <li class="nav__link">
+                  <a href="#">Наша миссия</a
+                  ><img src="./img/arrow.svg" alt="arrow" />
+                </li>
+                <li class="nav__link">
+                  <a href="#">Контакты</a
+                  ><img src="./img/arrow.svg" alt="arrow" />
+                </li>
+              </ul>
+              <div class="nav__lang">
+                <p>Язык:</p>
+                <a href="#"><img src="./img/kg.svg" alt="ksflag" /></a>
+                <a href="#"><img src="./img/ru.svg" alt="" /></a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div class="main__page">
+        <div class="container">
+          <div class="main__page_title">Название страницы</div>
+          <p>
+            Josh Frydenberg was elected to the Australian Parliament in 2010 as
+            the Member for Kooyong. He is the seventh person since Federation to
+            hold this seat. Josh Frydenberg was elected to the Australian
+            Parliament in 2010 as the Member for Kooyong. He is the seventh
+            person since Federation to hold this seat. Josh Frydenberg was
+            elected to the Australian Parliament in 2010 as the Member for
+            Kooyong. He is the seventh person since Federation to hold this
+            seat. Josh Frydenberg was elected to the Australian Parliament in
+            2010 as the Member for Kooyong. He is the seventh person since
+            Federation to hold this seat. Josh Frydenberg was elected to the
+            Australian Parliament in 2010 as the Member for Kooyong. He is the
+            seventh person since Federation to hold this seat. Josh Frydenberg
+            was elected to the Australian Parliament in 2010 as the Member for
+            Kooyong. He is the seventh person since Federation to hold this
+            seat. Josh Frydenberg was elected to the Australian Parliament in
+            2010 as the Member for Kooyong. He is the seventh person since
+            Federation to hold this seat. Josh Frydenberg was elected to the
+            Australian Parliament in 2010 as the Member for Kooyong. He is the
+            seventh person since Federation to hold this seat. Josh Frydenberg
+            was elected to the Australian Parliament in 2010 as the Member for
+            Kooyong. He is the seventh person since Federation to hold this
+            seat. Josh Frydenberg was elected to the Australian Parliament in
+            2010 as the Member for Kooyong. He is the seventh person since
+            Federation to hold this seat. Josh Frydenberg was elected to the
+            Australian Parliament in 2010 as the Member for Kooyong. He is the
+            seventh person since Federation to hold this seat. Josh Frydenberg
+            was elected to the Australian Parliament in 2010 as the Member for
+            Kooyong. He is the seventh person since Federation to hold this
+            seat. Josh Frydenberg was elected to the Australian Parliament in
+            2010 as the Member for Kooyong. He is the seventh person since
+            Federation to hold this seat. Josh Frydenberg was elected to the
+            Australian Parliament in 2010 as the Member for Kooyong. He is the
+            seventh person since Federation to hold this seat. Josh Frydenberg
+            was elected to the Australian Parliament in 2010 as the Member for
+            Kooyong. He is the seventh person since Federation to hold this
+            seat. Josh Frydenberg was elected to the Australian Parliament in
+            2010 as the Member for Kooyong. He is the seventh person since
+            Federation to hold this seat. Josh Frydenberg was elected to the
+            Australian Parliament in 2010 as the Member for Kooyong. He is the
+            seventh person since Federation to hold this seat. Josh Frydenberg
+            was elected to the Australian Parliament in 2010 as the Member for
+            Kooyong. He is the seventh person since Federation to hold this
+            seat. Josh Frydenberg was elected to the Australian Parliament in
+            2010 as the Member for Kooyong. He is the seventh person since
+            Federation to hold this seat. Josh Frydenberg was elected to the
+            Australian Parliament in 2010 as the Member for Kooyong. He is the
+            seventh person since Federation to hold this seat. Josh Frydenberg
+            was elected to the Australian Parliament in 2010 as the Member for
+            Kooyong. He is the seventh person since Federation to hold this
+            seat. Josh Frydenberg was elected to the Australian Parliament in
+            2010 as the Member for Kooyong. He is the seventh person since
+            Federation to hold this seat. Josh Frydenberg was elected to the
+            Australian Parliament in 2010 as the Member for Kooyong. He is the
+            seventh person since Federation to hold this seat. Josh Frydenberg
+            was elected to the Australian Parliament in 2010 as the Member for
+            Kooyong. He is the seventh person since Federation to hold this
+            seat.
+          </p>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__main">
+          <div class="footer__inform container">
+            <div class="footer__contacts">
+              <h4>Наши контакты</h4>
+              <div class="footer__contacts_phone">
+                <img src="./css/footer_css/phone.svg" alt="phone" />
+                <a href="tel:+996777445566">+996 777 44 55 66</a>
+              </div>
+              <div class="footer__contacts_phone">
+                <img src="./css/footer_css/phone.svg" alt="phone" />
+                <a href="tel:+996777445566">+996 777 44 55 66</a>
+              </div>
+              <div class="footer__contacts_phone">
+                <img src="./css/footer_css/phone.svg" alt="phone" />
+                <a href="tel:+996777445566">+996 777 44 55 66</a>
+              </div>
+              <hr />
+              <div class="footer__contacts_phone">
+                <img src="./css/footer_css/facebook.svg" alt="facebook" />
+                <a href="https://www.facebook.com/">Facebook</a>
+              </div>
+              <div class="footer__contacts_phone">
+                <img src="./css/footer_css/whatsapp.png" alt="facebook" />
+                <a href="https://www.instagram.com">Instagram</a>
+              </div>
+              <div class="footer__contacts_phone">
+                <img src="./css/footer_css/youtube.svg" alt="youtube" />
+                <a href="https://www.youtube.com/">Youtube</a>
+              </div>
+              <hr />
+              <div class="footer__contacts_phone">
+                <img src="./css/footer_css/mapaddress.svg" alt="map" />
+                <a
+                  href="https://yandex.ru/maps/10309/bishkek/?ll=74.603710%2C42.876366&z=12"
+                  >г.Бишкек, пр.Чуй</a
+                >
+              </div>
+            </div>
+            <div class="footer__map">
+              <img src="./css/footer_css/map.png" alt="map" />
+            </div>
+          </div>
+          <hr style="margin-top: 40px" class="container" />
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

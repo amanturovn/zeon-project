@@ -11,17 +11,29 @@
   margin-top: 33px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  /* position: relative; */
+}
+@media (max-width: 1000px) {
+  .section__inform {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .sectiom__inform_block {
+    margin-bottom: 20px;
+  }
 }
 .section__title {
   width: 331px;
   padding: 16px 0 0 16px;
   position: absolute;
 }
+@media (max-width: 400px) {
+  .section__title {
+    max-width: 320px;
+  }
+}
 
 .section__inform a {
-  /* position: absolute; */
   text-decoration: none;
   color: #181818;
   font-size: 14px;

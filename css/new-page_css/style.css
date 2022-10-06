@@ -1,0 +1,13 @@
+.main__page {
+  margin-top: 32px;
+}
+.main__page p {
+  max-width: 868px;
+  color: #7f8d97;
+  font-size: 14px;
+  margin: 16px 0 93px;
+}
+.main__page_title {
+  font-weight: 700;
+  font-size: 32px;
+}
