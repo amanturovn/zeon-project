@@ -40,13 +40,25 @@
   background-image: url(../inform_css/inform_img/emptydiv2.png);
 }
 .inform__block_desc {
-  width: 540px;
-  height: 365px;
-  background-color: #fff;
+  max-width: 540px;
+  min-height: 365px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    rgba(255, 255, 255, 0.8);
   position: absolute;
   right: 0;
   top: 0;
   margin: 64px;
+  padding: 42px 48px 0 48px;
+}
+.inform__block_desc-two {
+  padding: 34px 20px 0 40px;
+}
+.inform__block_desc-tree {
+  padding: 32px 30px 0 40px;
 }
 
 .inform__block_desc_left {
@@ -55,24 +67,23 @@
   left: 0;
   margin: 64px;
 }
-.inform__block_desc {
-  padding: 48px 0 0 48px;
-}
 
 .inform__block_desc-title {
-  width: 335px;
+  max-width: 335px;
   font-size: 28px;
   font-weight: 700;
 }
 .inform__block_desc-p {
   color: #b6b6b6;
   font-size: 14px;
+  font-weight: 400;
   max-width: 444px;
   margin: 10px 0 20px;
+  line-height: 1.4;
 }
 
 .inform__block_desc-btn {
-  width: 260px;
+  max-width: 260px;
   height: 40px;
   border: 1px solid;
   font-weight: 500;
@@ -84,4 +95,21 @@
 .inform__block_desc-btn:hover {
   background-color: rgb(98, 95, 95);
   transition: 0.7s;
+}
+
+@media (max-width: 465px) {
+  .inform__block_desc,
+  .inform__block_desc_left {
+    margin: 64px 0;
+  }
+  .inform__block_desc-title {
+    font-size: 20px;
+  }
+  .inform__block_desc-btn {
+    font-size: 20px;
+  }
+  .inform__block_desc-p {
+    height: 100px;
+    overflow: hidden;
+  }
 }

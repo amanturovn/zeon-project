@@ -8,9 +8,16 @@
 
 .section__inform {
   position: relative;
-  margin-top: 33px;
+  margin-top: 35px;
   display: flex;
   justify-content: space-between;
+}
+.section__title_par {
+  font-size: 14px;
+  margin-top: 5px;
+}
+.section__title_par {
+  margin-top: 10px;
 }
 @media (max-width: 1000px) {
   .section__inform {
@@ -27,6 +34,14 @@
   padding: 16px 0 0 16px;
   position: absolute;
 }
+.section__title h5 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.section__title p {
+  font-size: 14px;
+  font-weight: 400;
+}
 @media (max-width: 400px) {
   .section__title {
     max-width: 320px;
@@ -36,7 +51,8 @@
 .section__inform a {
   text-decoration: none;
   color: #181818;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .block__border {

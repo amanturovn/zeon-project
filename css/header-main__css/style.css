@@ -6,13 +6,11 @@
 body {
   font-family: "Inter", sans-serif;
   color: #181818;
-  left: 0;
-  top: 0;
   font-weight: 400;
 }
 .container {
   margin: 0 auto;
-  max-width: 1168px;
+  max-width: 1160px;
 }
 @media (max-width: 1200px) {
   .container {
@@ -56,11 +54,59 @@ body {
     display: none;
   }
 }
-.burger__menu {
+/* .burger__menu start =================== */
+.gamburger {
   display: none;
 }
+.burger__menu {
+  margin: 0 auto;
+  display: flex;
+  justify-content: end;
+}
+.menu-btn {
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: #181818;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn-burger {
+  width: 30px;
+  height: 4px;
+  background: white;
+  border-radius: 3px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn-burger::after,
+.menu-btn-burger::before {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  content: "";
+  width: 30px;
+  height: 4px;
+  background: white;
+  border-radius: 3px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn-burger::after {
+  transform: translateY(-12px);
+}
+
+.menu-btn-burger::before {
+  transform: translateY(12px);
+}
+/* burger-menu end */
 @media (max-width: 570px) {
-  .burger__menu {
+  .gamburger {
     display: block;
   }
 }
@@ -82,6 +128,7 @@ body {
 .nav__link :hover {
   color: #000000;
   opacity: 0.7;
+  box-shadow: 4px 2px 2px #000000;
   transition: 0.5s;
 }
 .nav__link img {
@@ -100,6 +147,13 @@ body {
   font-weight: 400;
 }
 
+.nav__lang img:hover {
+  transition: 1s;
+  box-shadow: 4px 1px 2px red;
+}
+
+/* main ================== */
+
 .main__banner {
   background-image: url(./main_img/fotka.png);
   background-position: center center;
@@ -108,7 +162,8 @@ body {
 @media (max-width: 700px) {
   .main__banner {
     max-width: 750px;
-    background-position: 75% 0;
+    background-position: 73% 90%;
+    background-size: cover;
   }
   .main__arrow {
     display: none;
@@ -116,17 +171,16 @@ body {
 }
 
 .main__inner {
-  margin: 0 32px;
-  padding: 227px 0 128px;
+  margin: 0 62px;
+  padding: 226px 0 128px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
 }
 
 .main__description {
   max-width: 343px;
-  max-height: 176px;
+  height: 176px;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -138,27 +192,16 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 700px) {
-  .main__description {
-    background-color: rgba(248, 199, 199, 0.154);
-  }
-  .main__inner {
-    /* padding: 277px 350px 0 0; */
-    /* padding: 0; */
-  }
-  .main__arrow_desc {
-    width: 100%;
-  }
-}
 
 .main__description_title {
   font-size: 28px;
   font-weight: 500;
   color: #ffffff;
+  text-align: left;
 }
 .main__description_sub-title {
   color: #ffffff;
-  margin: 20px 0 53px;
+  margin: 20px 0 55px;
 }
 .main__description_btn {
   width: 198px;
@@ -167,12 +210,54 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
 }
 .main__description_btn:hover {
   background-color: rgb(67, 64, 64);
   transition: 0.7s;
-  /* opacity: 0.5; */
 }
+
+@media (max-width: 700px) {
+  .main__description {
+    align-items: center;
+    width: 300px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .main__inner {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .main__arrow_desc {
+    max-width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .main__description_title {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .main__description_sub-title {
+    color: #ffffff;
+    font-size: 14px;
+  }
+  .main__description_btn {
+    background-color: #032624;
+  }
+  .main__description_btn a {
+    font-size: 18px;
+  }
+}
+
 .main__description_btn a {
   color: #ffffff;
   text-decoration: none;
@@ -188,7 +273,7 @@ body {
   width: 136px;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 28px;
+  padding-bottom: 26px;
 }
 .main__cyrles_cyrle {
   width: 12px;
@@ -201,4 +286,8 @@ body {
 .main__cyrles_cyrle:hover {
   border: 2px solid #ffffff;
   background-color: #0f2a59;
+}
+
+html {
+  scroll-behavior: smooth;
 }

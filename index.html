@@ -42,7 +42,13 @@
               <a href="#"><img src="./img/ru.svg" alt="" /></a>
             </div>
           </nav>
-          <div class="burger__menu">X</div>
+          <div class="gamburger">
+            <div class="burger__menu">
+              <div class="menu-btn">
+                <div class="menu-btn-burger"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -54,9 +60,11 @@
               <img class="main__arrow" src="./img/arrowleft.svg" alt="" />
             </div>
             <div class="main__description">
-              <div class="main__description_title">Теплосети</div>
-              <div class="main__description_sub-title">
-                Тепло в каждый уголок нашей страны
+              <div>
+                <div class="main__description_title">Теплосети</div>
+                <div class="main__description_sub-title">
+                  Тепло в каждый уголок нашей страны
+                </div>
               </div>
 
               <div class="main__description_btn">
@@ -81,8 +89,8 @@
           <div class="sectiom__inform_block">
             <div class="block__border"></div>
             <div class="section__title">
-              <p>На стадии разработки</p>
               <p><a href="#">Личный кабинет</a></p>
+              <p>На стадии разработки</p>
             </div>
             <img src="./img/work.svg" alt="" />
           </div>
@@ -90,11 +98,8 @@
             <div class="block__border"></div>
             <div class="section__title">
               <h5>Как подключиться?</h5>
-              <p>
-                <a href="#"
-                  >Подключение объектов к системе Централизованного
-                  теплоснабжения</a
-                >
+              <p class="section__title_par">
+                Подключение объектов к системе Централизованного теплоснабжения
               </p>
             </div>
             <img src="./img/setting.svg" alt="" />
@@ -103,23 +108,25 @@
             <div class="block__border"></div>
             <div class="section__title">
               <h5>Тарифы и калькуляторы</h5>
-              <p>
-                <a href="#">Действующие тарифы на услуги Кыргызтеплоэнерго</a>
+              <p class="section__title_par">
+                Действующие тарифы на услуги Кыргызтеплоэнерго
               </p>
             </div>
             <img src="./img/square.svg" alt="" />
           </div>
         </div>
       </section>
-      <section style="display: none" class="container">
+      <section class="container">
         <p class="news__title">Последние актуальные новости в мире энергии</p>
         <div class="section__news">
           <div class="section__news__base">
-            <p>08.04.03 18:34</p>
-            <h6>
-              Встреча министра образования с учителями школы Гимназии №70 города
-              бишкекка
-            </h6>
+            <div>
+              <p>08.04.03 18:34</p>
+              <h6>
+                Встреча министра образования с учителями школы Гимназии №70
+                города бишкекка
+              </h6>
+            </div>
           </div>
           <div class="section__news_sub">
             <div>
@@ -146,7 +153,7 @@
           </div>
         </div>
       </section>
-      <div style="display: none" class="inform__block container">
+      <div class="inform__block container">
         <div class="inform__block_one">
           <div class="inform__block_started">
             <div class="inform__block_desc">
@@ -169,7 +176,9 @@
         <div class="inform__block_two">
           <div class="inform__empty-obj"></div>
           <div class="inform__block_objective">
-            <div class="inform__block_desc inform__block_desc_left">
+            <div
+              class="inform__block_desc inform__block_desc-two inform__block_desc_left"
+            >
               <div id="missia" class="inform__block_desc-title">
                 Наша дальнейшая цель и будущее
               </div>
@@ -187,7 +196,7 @@
         </div>
         <div class="inform__block_tree">
           <div class="inform__block_aboutUs">
-            <div class="inform__block_desc">
+            <div class="inform__block_desc inform__block_desc-tree">
               <div class="inform__block_desc-title">Кто мы?</div>
               <div class="inform__block_desc-p">
                 Методологический подход к экологии как к науке позволяет
@@ -204,7 +213,7 @@
         </div>
       </div>
     </main>
-    <footer style="display: none" class="footer">
+    <footer class="footer">
       <div class="pre__footer container">
         <span>Как с нами связаться</span>
         <span>Социальные сети</span>
@@ -212,51 +221,64 @@
 
       <div class="footer__main">
         <div class="footer__inform container">
+          <h4 class="footer__contacts_hidden">Наши контакты</h4>
           <div id="contacts" class="footer__contacts">
-            <h4>Наши контакты</h4>
-            <div class="footer__contacts_phone">
-              <img src="./css/footer_css/phone.svg" alt="phone" />
-              <a href="tel:+996777445566">+996 777 44 55 66</a>
+            <div>
+              <h4 class="footer__contacts_hidden-inner">Наши контакты</h4>
+              <div class="footer__contacts_phone">
+                <img src="./css/footer_css/footer_img/phone.svg" alt="phone" />
+                <a href="tel:+996777445566">+996 777 44 55 66</a>
+              </div>
+
+              <div class="footer__contacts_phone">
+                <img src="./css/footer_css/footer_img/phone.svg" alt="phone" />
+                <a href="tel:+996777445566">+996 777 44 55 66</a>
+              </div>
+              <div class="footer__contacts_phone">
+                <img src="./css/footer_css/footer_img/phone.svg" alt="phone" />
+                <a href="tel:+996777445566">+996 777 44 55 66</a>
+              </div>
+              <hr />
+            </div>
+            <div>
+              <div class="footer__contacts_phone">
+                <img
+                  src="./css/footer_css/footer_img/facebook.svg"
+                  alt="facebook"
+                />
+                <a href="https://www.facebook.com/">Facebook</a>
+              </div>
+              <div class="footer__contacts_phone">
+                <img
+                  src="./css/footer_css/footer_img/whatsapp.png"
+                  alt="facebook"
+                />
+                <a href="https://www.instagram.com">Instagram</a>
+              </div>
+              <div class="footer__contacts_phone">
+                <img
+                  src="./css/footer_css/footer_img/youtube.svg"
+                  alt="youtube"
+                />
+                <a href="https://www.youtube.com/">Youtube</a>
+              </div>
+              <hr />
             </div>
             <div class="footer__contacts_phone">
-              <img src="./css/footer_css/phone.svg" alt="phone" />
-              <a href="tel:+996777445566">+996 777 44 55 66</a>
-            </div>
-            <div class="footer__contacts_phone">
-              <img src="./css/footer_css/phone.svg" alt="phone" />
-              <a href="tel:+996777445566">+996 777 44 55 66</a>
-            </div>
-            <hr />
-            <div class="footer__contacts_phone">
-              <img src="./css/footer_css/facebook.svg" alt="facebook" />
-              <a href="https://www.facebook.com/">Facebook</a>
-            </div>
-            <div class="footer__contacts_phone">
-              <img src="./css/footer_css/whatsapp.png" alt="facebook" />
-              <a href="https://www.instagram.com">Instagram</a>
-            </div>
-            <div class="footer__contacts_phone">
-              <img src="./css/footer_css/youtube.svg" alt="youtube" />
-              <a href="https://www.youtube.com/">Youtube</a>
-            </div>
-            <hr />
-            <div class="footer__contacts_phone">
-              <img src="./css/footer_css/mapaddress.svg" alt="map" />
+              <img src="./css/footer_css/footer_img/mapaddress.svg" alt="map" />
               <a
                 href="https://yandex.ru/maps/10309/bishkek/?ll=74.603710%2C42.876366&z=12"
                 >г.Бишкек, пр.Чуй</a
               >
             </div>
           </div>
-          <div class="footer__map">
-            <img src="./css/footer_css/map.png" alt="map" />
-          </div>
+          <div class="footer__map"></div>
         </div>
         <hr style="margin-top: 40px" class="container" />
       </div>
     </footer>
 
-    <div class="new__page" style="display: none">
+    <div style="display: none" class="new__page">
       <header class="header">
         <div class="container">
           <div class="header__inner">
@@ -264,14 +286,15 @@
             <nav class="header__nav">
               <ul class="nav__ul">
                 <li class="nav__link">
-                  <a href="#">О нас</a><img src="./img/arrow.svg" alt="arrow" />
-                </li>
-                <li class="nav__link">
-                  <a href="#">Наша миссия</a
+                  <a href="#aboutUs">О нас</a
                   ><img src="./img/arrow.svg" alt="arrow" />
                 </li>
                 <li class="nav__link">
-                  <a href="#">Контакты</a
+                  <a href="#missia">Наша миссия</a
+                  ><img src="./img/arrow.svg" alt="arrow" />
+                </li>
+                <li class="nav__link">
+                  <a href="#contacts">Контакты</a
                   ><img src="./img/arrow.svg" alt="arrow" />
                 </li>
               </ul>
@@ -281,6 +304,13 @@
                 <a href="#"><img src="./img/ru.svg" alt="" /></a>
               </div>
             </nav>
+            <div class="gamburger">
+              <div class="burger__menu">
+                <div class="menu-btn">
+                  <div class="menu-btn-burger"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </header>
@@ -349,36 +379,47 @@
         </div>
       </div>
       <footer class="footer">
+        <div class="pre__footer container">
+          <span>Как с нами связаться</span>
+          <span>Социальные сети</span>
+        </div>
+
         <div class="footer__main">
           <div class="footer__inform container">
-            <div class="footer__contacts">
-              <h4>Наши контакты</h4>
-              <div class="footer__contacts_phone">
-                <img src="./css/footer_css/phone.svg" alt="phone" />
-                <a href="tel:+996777445566">+996 777 44 55 66</a>
+            <h4 class="footer__contacts_hidden">Наши контакты</h4>
+            <div id="contacts" class="footer__contacts">
+              <div>
+                <h4 class="footer__contacts_hidden-inner">Наши контакты</h4>
+                <div class="footer__contacts_phone">
+                  <img src="./css/footer_css/phone.svg" alt="phone" />
+                  <a href="tel:+996777445566">+996 777 44 55 66</a>
+                </div>
+
+                <div class="footer__contacts_phone">
+                  <img src="./css/footer_css/phone.svg" alt="phone" />
+                  <a href="tel:+996777445566">+996 777 44 55 66</a>
+                </div>
+                <div class="footer__contacts_phone">
+                  <img src="./css/footer_css/phone.svg" alt="phone" />
+                  <a href="tel:+996777445566">+996 777 44 55 66</a>
+                </div>
+                <hr />
               </div>
-              <div class="footer__contacts_phone">
-                <img src="./css/footer_css/phone.svg" alt="phone" />
-                <a href="tel:+996777445566">+996 777 44 55 66</a>
+              <div>
+                <div class="footer__contacts_phone">
+                  <img src="./css/footer_css/facebook.svg" alt="facebook" />
+                  <a href="https://www.facebook.com/">Facebook</a>
+                </div>
+                <div class="footer__contacts_phone">
+                  <img src="./css/footer_css/whatsapp.png" alt="facebook" />
+                  <a href="https://www.instagram.com">Instagram</a>
+                </div>
+                <div class="footer__contacts_phone">
+                  <img src="./css/footer_css/youtube.svg" alt="youtube" />
+                  <a href="https://www.youtube.com/">Youtube</a>
+                </div>
+                <hr />
               </div>
-              <div class="footer__contacts_phone">
-                <img src="./css/footer_css/phone.svg" alt="phone" />
-                <a href="tel:+996777445566">+996 777 44 55 66</a>
-              </div>
-              <hr />
-              <div class="footer__contacts_phone">
-                <img src="./css/footer_css/facebook.svg" alt="facebook" />
-                <a href="https://www.facebook.com/">Facebook</a>
-              </div>
-              <div class="footer__contacts_phone">
-                <img src="./css/footer_css/whatsapp.png" alt="facebook" />
-                <a href="https://www.instagram.com">Instagram</a>
-              </div>
-              <div class="footer__contacts_phone">
-                <img src="./css/footer_css/youtube.svg" alt="youtube" />
-                <a href="https://www.youtube.com/">Youtube</a>
-              </div>
-              <hr />
               <div class="footer__contacts_phone">
                 <img src="./css/footer_css/mapaddress.svg" alt="map" />
                 <a
@@ -387,9 +428,7 @@
                 >
               </div>
             </div>
-            <div class="footer__map">
-              <img src="./css/footer_css/map.png" alt="map" />
-            </div>
+            <div class="footer__map"></div>
           </div>
           <hr style="margin-top: 40px" class="container" />
         </div>
