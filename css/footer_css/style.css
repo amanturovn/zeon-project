@@ -1,5 +1,5 @@
 .footer__main {
-  background-color: #181818;
+  background-color: var(--main-primary-blue);
   padding: 52px 0 40px;
   margin-top: 16px;
   height: 100%;
@@ -27,7 +27,9 @@
   color: #ffffff;
   font-size: 13px;
   font-weight: 700;
+  text-decoration: none;
 }
+
 .footer__contacts_phone a:hover {
   color: #e3da39;
   font-weight: 700;
@@ -37,6 +39,8 @@
   height: 342px;
   background-image: url(../footer_css/footer_img/map.png);
   width: 869px;
+  /* background-repeat: no-repeat;
+  background-size: cover; */
 }
 .pre__footer span {
   margin-right: 35px;
@@ -47,6 +51,12 @@
 }
 .footer__contacts_hidden {
   display: none;
+}
+.footer__line {
+  margin-top: 40px;
+  border-bottom: 1px solid #303030;
+  opacity: 80%;
+  height: 1px;
 }
 @media (max-width: 1200px) {
   .footer__map {
@@ -78,7 +88,9 @@
   }
   .footer__map {
     margin-top: 30px;
-    width: 100%;
+    width: 80%;
+    background-size: contain;
+    height: 200px;
   }
   .footer__contacts {
     margin: 0 auto;

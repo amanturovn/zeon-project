@@ -12,10 +12,7 @@
   display: flex;
   justify-content: space-between;
 }
-.section__title_par {
-  font-size: 14px;
-  margin-top: 5px;
-}
+
 .section__title_par {
   margin-top: 10px;
 }
